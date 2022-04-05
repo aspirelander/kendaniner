@@ -145,10 +145,26 @@ body {
   .page-nav h2 {
     font-size: 36px;
     width: 100%;
-    color: #444; }
-    @media screen and (max-width: 600px) {
+    color: #444;}
+    @media screen and (min-width: 320px) {
       .page-nav h2 {
-        font-size: 26px; } }
+        font-size: 26px;
+        margin-left: -15px} }
+
+
+     @media screen and (min-width: 375px) {
+      .page-nav h2 {
+        font-size: 26px;
+        margin-left: 0px} }
+
+     @media screen and (min-width: 768px) {
+      .page-nav h2 {
+        font-size: 26px;
+        margin-left: 100px} }
+
+
+
+
   .page-nav ul li {
     float: left;
     margin-right: 10px;
@@ -463,6 +479,7 @@ header {
   float: none;
   margin: auto; }
 
+
 /* ===================================== Slider CSS ==================================== */
 .about-us {
   background-color: #FFF;
@@ -525,6 +542,8 @@ footer .about .foot-address .addet {
   font-size: .9rem;
   margin: auto 0px; }
 
+
+
 footer .fotblog .blohjb {
   margin-bottom: 10px; }
 
@@ -584,3 +603,382 @@ footer .tags ul li {
 
 
 /* ===================================== icons CSS ==================================== */
+
+
+.row2 {
+  width: 100%;
+  margin:75px 0 75px 0 ;
+}
+
+
+.row2 .h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 320px){
+
+  .row2 .h2 {
+    font-size: 26px;
+
+}
+}
+
+.donation-container {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 75px;
+  flex-wrap: wrap;
+}
+
+.donation-box .dingo-logo {
+ 
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+
+.flex-container {
+  justify-content: center;
+  width: 100%;
+}
+
+
+.donation-box {
+  width: 390px;
+  height: 400px;
+  background-color: #F5F5F5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  margin-left: 15px;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 320px) {
+      .donation-box {
+        margin-left: 10px;
+        width: 300px;
+        height: 420px; } }
+
+@media screen and (min-width: 375px) {
+      .donation-box {
+        margin-left: 37px;
+        width: 300px;
+        height: 420px; } }
+
+@media screen and (min-width: 425px) {
+      .donation-box {
+        margin-left: 41px;
+        width: 350px;
+        height: 420px; } }
+
+.donation-box .title {
+  background-color: #C1D82F;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 14.9px;
+  font-size: 15px;
+}
+
+.donation-box .donate-button {
+  background-color: #C1D82F;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  bottom: 0px;
+  position: absolute;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.donation-box .fields {
+  width: 59%;
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+
+.donation-box .fields input {
+  width: 90%;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 4px;
+  border-width: 0px;
+  color: #5C5C5C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-input-placeholder {
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #cdcdcd;
+   font-size: 15px; 
+}
+
+:-ms-input-placeholder {  
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+.donation-box .amount {
+  width: 30%;
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+}
+
+.donation-box .amount .button {
+  width: 100%;
+  background-color: gray;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  padding: 15px 0px 15px 0px;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  
+  -webkit-transition: 400ms background-color;
+  -moz-transition: 800ms opacity, 800ms right;
+  -ms-transition: 800ms opacity, 800ms right;
+  -o-transition: 800ms opacity, 800ms right;
+  transition: 200ms background-color;
+}
+
+.donation-box .amount .button:hover {
+  background-color: #393939;
+}
+
+.donation-box .amount .button.selected {
+  background-color: #393939;
+}
+
+.donation-box .amount .button input {
+  min-width: 34px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  border-bottom: 2px dashed white;
+  -webkit-font-smoothing: antialiased;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.set-amount {
+  max-width: 96px;
+}
+
+.switch {
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  margin: 20px auto;
+  height: 26px;
+  width: 53.4%;
+  background: white;
+  border-radius: 3px;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 49%;
+  line-height: 26px;
+  font-size: 11px;
+  color: #5C5C5C;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 114px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 20px;
+  width: 45%;
+  height: 22px;
+  background: #65bd63;
+  border-radius: 3px;
+  background-color: #C1D82F;
+  margin-left: -15px;
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+
+
+@media screen and (min-width: 320px){
+  .switch-selection {
+  left: 35px;
+  margin-left: -30px;
+}
+}
+
+@media screen and (min-width: 375px){
+  .switch-selection {
+  left: 35px;
+  margin-left: -30px;
+}
+}
+
+@media screen and (min-width: 425px){
+  .switch-selection {
+  left: 25px;
+  margin-left: -20px;
+}
+}
+
+
+
+
+.checkboxes {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+}
+
+.checkboxes label {
+  position: relative;
+  top: -8px;
+  font-size: 11px;
+  color: gray;
+}
+
+.checkbox {
+  -webkit-appearance: ;
+  background-color: #fafafa;
+  border: 1px solid #C1D82F;
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.checkbox:active, .checkbox:checked:active {
+  
+}
+
+.checkbox:checked {
+  background-color: #C1D82F;
+  border: 1px solid #C1D82F;
+  color: ;
+}
+
+/*.checkbox:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: white;
+}*/
+
+.confirm {
+  display: none;
+  position: absolute;
+  top: 335px;
+  left: 15px;
+  right: 15px;
+  font-size: 16px;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.confirm i {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+
+
+
+/* images */
+
+
